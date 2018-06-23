@@ -14,13 +14,13 @@ abstract class DataBaseDAO {
             String user = "root";
             String pass = "";
             conn = DriverManager.getConnection(url, user, pass);
-        } catch (Exception e) {
+        } catch (Exception e) {/*
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/bomgosto";
             String user = "root";
-            /*senha para o Debian = prog */
+            //senha para o Debian = prog 
             String pass = "prog";
-            conn = DriverManager.getConnection(url, user, pass);
+            conn = DriverManager.getConnection(url, user, pass);*/
         }
     }
 

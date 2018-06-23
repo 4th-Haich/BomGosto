@@ -19,7 +19,9 @@
     Date data = new Date();
     SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
     String dates = formatter.format(data);
-    NumberFormat fm = NumberFormat.getCurrencyInstance();
+    NumberFormat fm = NumberFormat.getCurrencyInstance();   
+    Cliente uLogadoCL = new Cliente();
+    uLogadoCL = (Cliente) session.getAttribute("usuario");        
 %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -55,11 +57,7 @@
             <script src="js/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>	
-        <%
-            Cliente uLogadoCL = new Cliente();
-            uLogadoCL = (Cliente) session.getAttribute("usuario");
-        %>
+    <body>	        
         <!-- /////////////////////////////////////////Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">

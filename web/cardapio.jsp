@@ -135,9 +135,13 @@
                                             <option value="300">300 Ml</option>
                                             <%}%>                                        
                                         </select>                                        
-                                        <%
-                                            if (uLogadoC.getId() != 0) {
-                                                out.print("<button type='submit' class='btn btn-success' ><em class='fa fa-cart-plus'></em> Adicionar</button>");
+                                        <% 
+                                            try{
+                                                if (uLogadoC.getId() != 0) {
+                                                    out.print("<button type='submit' class='btn btn-success' ><em class='fa fa-cart-plus'></em> Adicionar</button>");
+                                                }
+                                            }catch (Exception e){
+                                                out.println("Faça login para iniciar um pedido");
                                             }
                                         %>
                                     </form>
