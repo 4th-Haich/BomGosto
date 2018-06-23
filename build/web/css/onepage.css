@@ -1,0 +1,22 @@
+.tab-content > div:last-child {
+  display: none;
+}
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+	
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}		
+}

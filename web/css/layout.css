@@ -1,0 +1,21 @@
+#fundo{	
+	border: 2px solid black;
+	width: 800px;
+	height: 500px;
+	margin: 50px auto 0px auto;
+
+}
+#conteudo{	
+	border: 2px solid black;
+	width: 250px;
+	height: 170px;
+	margin: 145px auto 0px auto;
+	background-color: #2b2c2d;
+	position: relative;
+	float: center;
+	top: -450px;
+	padding: -100px;
+}
+
+
+
